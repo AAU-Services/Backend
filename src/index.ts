@@ -5,6 +5,7 @@ import authRoutes from "./routes/authRoutes";
 import userRoutes from "./routes/userRoutes";
 import buildingRoutes from "./routes/buildingRoutes";
 import campusRoutes from "./routes/campusRoutes";
+import eventRoutes from "./routes/eventRoutes";
 
 const app = express();
 const port = 3000;
@@ -18,6 +19,7 @@ app.use(`${prefix}/auth`, authRoutes);
 app.use(`${prefix}/user`, userRoutes);
 app.use(`${prefix}/building`, buildingRoutes);
 app.use(`${prefix}/campus`, buildingRoutes);
+app.use(`${prefix}/event`, eventRoutes);
 
 mongoose
   .connect(db, {

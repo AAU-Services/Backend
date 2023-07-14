@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(`${prefix}/auth`, authRoutes);
 app.use(`${prefix}/user`, userRoutes);
 app.use(`${prefix}/building`, buildingRoutes);
-app.use(`${prefix}/campus`, buildingRoutes);
+app.use(`${prefix}/campus`, campusRoutes);
 app.use(`${prefix}/event`, eventRoutes);
 app.use(`${prefix}/opportunity`, opportunityRoutes);
 

@@ -4,7 +4,6 @@ import mongoose, { ConnectOptions } from "mongoose";
 import authRoutes from "./routes/authRoutes";
 import userRoutes from "./routes/userRoutes";
 import buildingRoutes from "./routes/buildingRoutes";
-import campusRoutes from "./routes/campusRoutes";
 
 const app = express();
 const port = 3000;
